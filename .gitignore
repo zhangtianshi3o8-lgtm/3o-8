@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Local archive (not deployed)
+archive/
+
+# Launch script (local only)
+启动独立站.command
+
+# Editor
+*.swp
+*~
+.vscode/
