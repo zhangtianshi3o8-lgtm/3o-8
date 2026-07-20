@@ -380,8 +380,8 @@
     .coming p { color: var(--gray-500); max-width: 520px; margin: 0 auto 56px; }
     .coming-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
     .coming-card {
       background: rgba(255,255,255,0.05);
@@ -529,7 +529,7 @@
        =================================================== */
     @media (max-width: 880px) {
       .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 20px; }
-      .coming-grid { grid-template-columns: 1fr; }
+      .coming-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 740px) {
       .nav-links { display: none; }
@@ -585,8 +585,8 @@
   <section class="stats">
     <div class="stats-grid reveal-stagger">
       <div class="stat">
-        <div class="num" data-count="2">0</div>
-        <div class="cap">Titles Published</div>
+        <div class="num" data-count="6">0</div>
+        <div class="cap">Titles in Catalog</div>
       </div>
       <div class="stat">
         <div class="num" data-count="52">0</div>
@@ -673,19 +673,24 @@
       <div class="coming-grid reveal-stagger">
         <!-- Add new upcoming titles here by copying a .coming-card -->
         <div class="coming-card">
-          <div class="cat">Faith</div>
-          <h4>Prayer Journal Collection</h4>
-          <p>Guided prayer notebooks for every season of life.</p>
+          <div class="cat">Sports</div>
+          <h4>Football Game Tracker</h4>
+          <p>Track every game of the season — pro &amp; college scores, playoffs, stats, and your weekly picks.</p>
         </div>
         <div class="coming-card">
-          <div class="cat">Family</div>
-          <h4>Home Learning Planners</h4>
-          <p>Weekly planning systems for busy households.</p>
+          <div class="cat">Sports</div>
+          <h4>Basketball Game Tracker</h4>
+          <p>Pro &amp; college hoops journal with quarter scores, playoff series, and tournament brackets.</p>
         </div>
         <div class="coming-card">
-          <div class="cat">Wellness</div>
-          <h4>Habit &amp; Wellness Trackers</h4>
-          <p>Beautiful trackers for building a healthier life.</p>
+          <div class="cat">Sports</div>
+          <h4>Baseball Game Tracker</h4>
+          <p>Inning-by-inning score logs, pitching stats, standings, and a full postseason bracket.</p>
+        </div>
+        <div class="coming-card">
+          <div class="cat">Nature</div>
+          <h4>Bird Watching Journal</h4>
+          <p>A field companion with life list, sighting log, sketch pages, and seasonal migration tracker.</p>
         </div>
       </div>
     </div>
