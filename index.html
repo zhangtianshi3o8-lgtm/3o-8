@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>More Shine Press — Books for Faith, Family &amp; Growth</title>
-  <meta name="description" content="More Shine Press is an independent publishing house creating handbooks designed to be used — not just read.">
+  <title>More Shine Press &#8212; Books for Faith, Family &amp; Growth</title>
+  <meta name="description" content="More Shine Press is an independent publishing house creating handbooks designed to be used &#8212; not just read. 43 titles across faith, sports, nature, and lifestyle.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
-  <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="More Shine Press — Books for Faith, Family & Growth">
-  <meta property="og:description" content="Independent publishing house creating handbooks designed to be used — not just read.">
+  <meta property="og:title" content="More Shine Press &#8212; 43 Books for Faith, Family & Growth">
+  <meta property="og:description" content="Independent publishing house creating handbooks designed to be used &#8212; not just read.">
   <meta property="og:site_name" content="More Shine Press">
   <meta property="og:url" content="https://3o-8.com">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="More Shine Press — Books for Faith, Family & Growth">
-  <meta name="twitter:description" content="Independent publishing house creating handbooks designed to be used — not just read.">
 
   <style>
+
     /* ===================================================
        More Shine Press · Apple-inspired design system
        Core principles: whitespace, depth, motion, restraint
@@ -562,238 +559,397 @@
         transform: none !important;
       }
     }
+  
+
+    /* FULL CATALOG GRID */
+    .catalog { padding: 120px 22px 80px; background: var(--gray-50); }
+    .catalog-inner { max-width: var(--max-w); margin: 0 auto; }
+    .catalog-header { text-align: center; margin-bottom: 60px; }
+    .catalog-header .label { margin-bottom: 14px; }
+    .catalog-header h2 { margin-bottom: 16px; }
+    .catalog-header p { max-width: 540px; margin: 0 auto; }
+    .cat-section { margin-bottom: 56px; }
+    .cat-section:last-child { margin-bottom: 0; }
+    .cat-title {
+      font-size: 20px; font-weight: 700; letter-spacing: -0.02em;
+      color: var(--gray-900); margin-bottom: 24px;
+      padding-bottom: 12px; border-bottom: 1px solid var(--gray-200);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .cat-title .count { font-size: 13px; font-weight: 500; color: var(--gray-500); }
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .cat-card {
+      background: #fff; border: 1px solid var(--gray-200); border-radius: 16px;
+      padding: 24px 20px; transition: all 0.3s var(--ease-ios); position: relative;
+    }
+    .cat-card:hover { border-color: var(--accent); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .cat-card .cc-title { font-size: 15px; font-weight: 600; color: var(--gray-900); margin-bottom: 4px; line-height: 1.3; }
+    .cat-card .cc-sub { font-size: 12px; color: var(--gray-500); line-height: 1.4; margin-bottom: 10px; }
+    .cat-card .cc-meta { font-size: 11px; color: var(--accent); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+
   </style>
 </head>
 <body>
 
-  <!-- ===== NAV ===== -->
+  <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#" class="nav-logo">More <b>Shine</b> Press</a>
       <ul class="nav-links">
-        <li><a href="#books">Books</a></li>
-        <li><a href="#coming">Coming Soon</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#catalog">All Books</a></li>
         <li><a href="#subscribe">Free Resources</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-stagger" style="display: contents;">
       <span class="label eyebrow">Independent Publishing</span>
       <h1 class="display">Books designed to be <span class="grad">used</span>,<br>not just read.</h1>
-      <p class="body-l sub">More Shine Press creates thoughtful handbooks for faith, family, and the life you're building — crafted with the same care as the stories they hold.</p>
+      <p class="body-l sub">More Shine Press creates thoughtful journals, planners, and handbooks for faith, family, and the life you&#8217;re building &#8212; 43 titles and growing.</p>
       <div class="btn-group">
-        <a href="#books" class="btn btn-primary">Explore the collection <span class="arrow">→</span></a>
+        <a href="#catalog" class="btn btn-primary">Explore all 43 books <span class="arrow">&#8594;</span></a>
         <a href="#subscribe" class="btn btn-ghost">Free downloads</a>
       </div>
     </div>
-    <div class="scroll-cue">⌄</div>
+    <div class="scroll-cue">&#8964;</div>
   </header>
 
-  <!-- ===== STATS ===== -->
+  <!-- STATS -->
   <section class="stats">
     <div class="stats-grid reveal-stagger">
       <div class="stat">
-        <div class="num" data-count="22">0</div>
+        <div class="num" data-count="43">0</div>
         <div class="cap">Titles in Catalog</div>
       </div>
       <div class="stat">
-        <div class="num" data-count="52">0</div>
-        <div class="cap">Weeks of Content</div>
+        <div class="num" data-count="3703">0</div>
+        <div class="cap">Pages of Content</div>
       </div>
       <div class="stat">
-        <div class="num" data-count="66">0</div>
-        <div class="cap">Books of the Bible</div>
+        <div class="num" data-count="6">0</div>
+        <div class="cap">Categories</div>
       </div>
       <div class="stat">
-        <div class="num" data-count="9">0</div>
-        <div class="cap">Sports Covered</div>
+        <div class="num" data-count="100">0</div>
+        <div class="cap">Percent Self-Published</div>
       </div>
     </div>
   </section>
 
-  <!-- ===== BOOK SHOWCASES ===== -->
-  <div id="books">
-
-    <!-- ============ BOOK 1: Bible Study Handbook ============
-         To add a new book, copy this entire <section class="book-row"> block
-         and change the cover / info content. Use class "reverse" to alternate. -->
+  <!-- FEATURED BOOKS -->
+  <div id="featured">
     <section class="book-row reveal">
       <div class="book-row-inner">
         <div class="book-cover-wrap">
           <div class="book-cover-3d cover-bible">
-            <!-- TODO: Replace this div with <img src="bible_cover.jpg"> once you have a real cover screenshot -->
             <div class="ct">Bible Study Handbook</div>
             <div class="cs">A 52-Week Guide Through Scripture</div>
             <div class="cb">Reflection Journal</div>
           </div>
         </div>
         <div class="book-info">
-          <span class="label">Now Available</span>
+          <span class="label">Featured</span>
           <h2 class="title-l">A year-long journey through Scripture.</h2>
-          <p class="body-l lead">A complete 52-week guide through all 66 books of the Bible — organized into 10 connected epochs from Genesis to Revelation, with space to reflect, pray, and grow.</p>
+          <p class="body-l lead">A complete 52-week guide through all 66 books of the Bible &#8212; organized into 10 connected epochs from Genesis to Revelation, with space to reflect, pray, and grow.</p>
           <ul class="feature-list">
-            <li><span class="check">✓</span> 52 weeks of guided Scripture study with theme overviews</li>
-            <li><span class="check">✓</span> 3 rotating journal methods: SOAP, Verse Mapping &amp; Inductive</li>
-            <li><span class="check">✓</span> Generous writing space with prayer &amp; gratitude prompts</li>
-            <li><span class="check">✓</span> Translation-neutral — works with ESV, NIV, KJV, NLT &amp; more</li>
+            <li><span class="check">&#10003;</span> 52 weeks of guided Scripture study with theme overviews</li>
+            <li><span class="check">&#10003;</span> 3 rotating journal methods: SOAP, Verse Mapping &amp; Inductive</li>
+            <li><span class="check">&#10003;</span> Generous writing space with prayer &amp; gratitude prompts</li>
+            <li><span class="check">&#10003;</span> Translation-neutral &#8212; works with ESV, NIV, KJV, NLT &amp; more</li>
           </ul>
-          <!-- TODO: Replace # with your Amazon product URL -->
-          <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View on Amazon <span class="arrow">→</span></a>
         </div>
       </div>
     </section>
 
-    <!-- ============ BOOK 2: Family Sports Handbook ============ -->
     <section class="book-row reverse reveal">
       <div class="book-row-inner">
         <div class="book-cover-wrap">
           <div class="book-cover-3d cover-sports">
-            <!-- TODO: Replace with <img src="sports_cover.jpg"> -->
             <div class="ct">The Family Sports Handbook</div>
-            <div class="cs">A Parent's Guide to Young Athletes</div>
+            <div class="cs">A Parent&#8217;s Guide to Young Athletes</div>
             <div class="cb">9 American Sports</div>
           </div>
         </div>
         <div class="book-info">
-          <span class="label">Now Available</span>
+          <span class="label">Featured</span>
           <h2 class="title-l">Coach your child with confidence.</h2>
-          <p class="body-l lead">A practical guide for parents and young athletes — covering fundamentals, core skills, home drills, and talent indicators across 9 popular American sports.</p>
+          <p class="body-l lead">A practical guide for parents and young athletes &#8212; covering fundamentals, core skills, home drills, and talent indicators across 9 popular American sports.</p>
           <ul class="feature-list">
-            <li><span class="check">✓</span> Basketball, Baseball, Football, Soccer, Swimming &amp; more</li>
-            <li><span class="check">✓</span> Home drills and practice notes for every sport</li>
-            <li><span class="check">✓</span> Talent indicators to help identify natural strengths</li>
-            <li><span class="check">✓</span> Safety guidelines and equipment guidance</li>
+            <li><span class="check">&#10003;</span> Basketball, Baseball, Football, Soccer, Swimming &amp; more</li>
+            <li><span class="check">&#10003;</span> Home drills and practice notes for every sport</li>
+            <li><span class="check">&#10003;</span> Talent indicators to help identify natural strengths</li>
+            <li><span class="check">&#10003;</span> Safety guidelines and equipment guidance</li>
           </ul>
-          <!-- TODO: Replace # with your Amazon product URL -->
-          <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View on Amazon <span class="arrow">→</span></a>
         </div>
       </div>
     </section>
-
   </div>
 
-  <!-- ===== COMING SOON (预留新书空间) ===== -->
-  <section class="coming" id="coming">
-    <div class="coming-inner">
-      <span class="label reveal">On the Horizon</span>
-      <h2 class="title-m reveal" style="margin-top:14px;">More handbooks, in the works.</h2>
-      <p class="body-l reveal" style="margin-top:16px;">We're always building. Here's what's coming next from More Shine Press — each title crafted with the same depth and care.</p>
-      <div class="coming-grid reveal-stagger">
-        <!-- Add new upcoming titles here by copying a .coming-card -->
-        <div class="coming-card">
-          <div class="cat">Sports</div>
-          <h4>Football Journal</h4>
-          <p>Track every game of the season — pro &amp; college scores, playoffs, stats, and your weekly picks.</p>
+  <!-- FULL CATALOG -->
+  <section class="catalog" id="catalog">
+    <div class="catalog-inner">
+      <div class="catalog-header reveal">
+        <span class="label">The Collection</span>
+        <h2 class="title-m" style="margin-top:14px;">43 books, 6 categories, one standard.</h2>
+        <p class="body-l" style="margin-top:16px;">Every More Shine Press book is designed with the same care &#8212; generous writing space, premium layouts, and content that actually gets used.</p>
+      </div>
+      <div class="cat-section reveal">
+        <div class="cat-title">&#10013; Faith <span class="count">2 titles</span></div>
+        <div class="cat-grid">
+          <div class="cat-card">
+            <div class="cc-title">Bible Study Handbook</div>
+            <div class="cc-sub"></div>
+            <div class="cc-meta">8 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Prayer Journal</div>
+            <div class="cc-sub">A 52-Week Guided Journal for Prayer, Scripture &amp; Gratitude</div>
+            <div class="cc-meta">128 pages</div>
+          </div>
         </div>
-        <div class="coming-card">
-          <div class="cat">Sports</div>
-          <h4>Basketball Stats Book</h4>
-          <p>Pro &amp; college hoops journal with quarter scores, playoff series, and tournament brackets.</p>
+      </div>
+      <div class="cat-section reveal">
+        <div class="cat-title">&#9749; Food & Drink <span class="count">6 titles</span></div>
+        <div class="cat-grid">
+          <div class="cat-card">
+            <div class="cc-title">Beer Tasting Journal</div>
+            <div class="cc-sub">Track Every Pint, Every Brewery, Every Flavor</div>
+            <div class="cc-meta">94 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Cigar Tasting Log</div>
+            <div class="cc-sub">Track Every Smoke, Every Blend, Every Nuance</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Coffee Tasting Log Book</div>
+            <div class="cc-sub">Track Every Cup, Every Origin, Every Flavor</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Tea Tasting Journal</div>
+            <div class="cc-sub">Track Every Steep, Every Blend, Every Discovery</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Whiskey Tasting Log Book</div>
+            <div class="cc-sub">Track Every Pour, Every Distillery, Every Flavor</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Wine Tasting Journal</div>
+            <div class="cc-sub">Track Every Glass, Every Vintage, Every Discovery</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
         </div>
-        <div class="coming-card">
-          <div class="cat">Sports</div>
-          <h4>Baseball Scorebook</h4>
-          <p>Inning-by-inning score logs, pitching stats, standings, and a full postseason bracket.</p>
+      </div>
+      <div class="cat-section reveal">
+        <div class="cat-title">&#9776; Nature & Outdoors <span class="count">9 titles</span></div>
+        <div class="cat-grid">
+          <div class="cat-card">
+            <div class="cc-title">Beekeeping Log Book</div>
+            <div class="cc-sub">Track Every Hive, Every Harvest, Every Season</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Bird Watching Journal</div>
+            <div class="cc-sub">Your Field Companion for Birding Adventures &amp; Discoveries</div>
+            <div class="cc-meta">120 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Camping Journal</div>
+            <div class="cc-sub">Capture Every Campfire, Every Starry Night, Every Adventure</div>
+            <div class="cc-meta">80 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Fishing Log Book</div>
+            <div class="cc-sub">Track Every Catch, Every Trip, Every Story</div>
+            <div class="cc-meta">133 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Gardening Journal</div>
+            <div class="cc-sub">Track Every Seed, Every Bloom, Every Harvest</div>
+            <div class="cc-meta">80 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Hiking Adventure Journal</div>
+            <div class="cc-sub">Track Every Trail, Every Summit, Every Mile</div>
+            <div class="cc-meta">80 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Hunting Log Book</div>
+            <div class="cc-sub">Track Every Hunt, Every Season, Every Memory</div>
+            <div class="cc-meta">82 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Mushroom Foraging Journal</div>
+            <div class="cc-sub">Track Every Find, Every Habitat, Every Season</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Stargazing Journal</div>
+            <div class="cc-sub">Track Every Constellation, Every Planet, Every Meteor Shower</div>
+            <div class="cc-meta">80 pages</div>
+          </div>
         </div>
-        <div class="coming-card">
-          <div class="cat">Sports</div>
-          <h4>Golf Log Book</h4>
-          <p>18-hole scorecards with PAR &amp; handicap tracking, club distance logs, and full round-by-round stats.</p>
+      </div>
+      <div class="cat-section reveal">
+        <div class="cat-title">&#9917; Sports & Fitness <span class="count">9 titles</span></div>
+        <div class="cat-grid">
+          <div class="cat-card">
+            <div class="cc-title">Baseball Scorebook</div>
+            <div class="cc-sub">Your Ultimate Season Journal for Major League &amp; College Baseball</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Basketball Stats Book</div>
+            <div class="cc-sub">Your Ultimate Season Journal for Pro &amp; College Basketball</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Cycling Adventure Journal</div>
+            <div class="cc-sub">Track Your Rides, Routes, and Milestones</div>
+            <div class="cc-meta">80 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Football Journal</div>
+            <div class="cc-sub">Your Ultimate Season Journal for NFL &amp; College Football</div>
+            <div class="cc-meta">120 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Golf Log Book</div>
+            <div class="cc-sub">Your Ultimate Golf Journal for Every Round You Play</div>
+            <div class="cc-meta">101 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Pickleball Journal</div>
+            <div class="cc-sub">Track Every Game, Every Partner, Every Tournament</div>
+            <div class="cc-meta">112 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Running Training Log</div>
+            <div class="cc-sub">Track Every Run, Every Mile, Every Goal</div>
+            <div class="cc-meta">68 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Workout &amp; Fitness Journal</div>
+            <div class="cc-sub">Track Every Rep, Every Set, Every Gain</div>
+            <div class="cc-meta">104 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Youth Sports Development Handbook</div>
+            <div class="cc-sub">A Parent's Guide to Training and Discovering Your Child's Athletic Potential</div>
+            <div class="cc-meta">37 pages</div>
+          </div>
         </div>
-        <div class="coming-card">
-          <div class="cat">Nature</div>
-          <h4>Bird Watching Journal</h4>
-          <p>A field companion with life list, sighting log, sketch pages, and seasonal migration tracker.</p>
+      </div>
+      <div class="cat-section reveal">
+        <div class="cat-title">&#9998; Lifestyle & Planning <span class="count">14 titles</span></div>
+        <div class="cat-grid">
+          <div class="cat-card">
+            <div class="cc-title">Dream Journal</div>
+            <div class="cc-sub">Capture the Journey of Your Subconscious Mind</div>
+            <div class="cc-meta">66 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Genealogy Research Log Book</div>
+            <div class="cc-sub">Trace Every Ancestor, Every Record, Every Story</div>
+            <div class="cc-meta">66 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Gratitude Journal</div>
+            <div class="cc-sub">Find Joy in Every Day</div>
+            <div class="cc-meta">111 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Home Renovation Planner</div>
+            <div class="cc-sub">Plan Every Project, Every Budget, Every Detail</div>
+            <div class="cc-meta">60 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Knitting Project Planner</div>
+            <div class="cc-sub">Track Every Stitch, Finish Every Project</div>
+            <div class="cc-meta">68 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Meal Planner &amp; Grocery</div>
+            <div class="cc-sub">52 Weeks of Healthy Eating Made Simple</div>
+            <div class="cc-meta">111 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Music Practice Journal</div>
+            <div class="cc-sub">Track Your Progress, Master Your Craft</div>
+            <div class="cc-meta">70 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Photography Log Book</div>
+            <div class="cc-sub">Capture Every Shot, Every Setting, Every Story</div>
+            <div class="cc-meta">66 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Reading Journal</div>
+            <div class="cc-sub">Track Every Book, Every Thought, Every Journey</div>
+            <div class="cc-meta">62 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Stock Trading Journal</div>
+            <div class="cc-sub">Track Every Trade, Analyze Every Move, Master Your Strategy</div>
+            <div class="cc-meta">66 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Travel Journal</div>
+            <div class="cc-sub">Capture Every Journey, Every Memory, Every Adventure</div>
+            <div class="cc-meta">53 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Vehicle Maintenance Log Book</div>
+            <div class="cc-sub">Track Every Service, Every Mile, Every Repair</div>
+            <div class="cc-meta">76 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Wedding Planner</div>
+            <div class="cc-sub">Your Complete Guide to the Perfect Day</div>
+            <div class="cc-meta">78 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Yoga and Meditation Journal</div>
+            <div class="cc-sub">Track Your Practice, Nurture Your Inner Peace</div>
+            <div class="cc-meta">66 pages</div>
+          </div>
         </div>
-        <div class="coming-card">
-          <div class="cat">Sports</div>
-          <h4>Cycling Adventure Journal</h4>
-          <p>A pocket-size rider's log — 35 ride spreads with route maps, elevation, weather, and journey notes.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Nature</div>
-          <h4>Fishing Log Book</h4>
-          <p>A complete angler's log — 40 catch records with location, weather, bait, tackle, and the stories behind each trip.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Faith</div>
-          <h4>Prayer Journal</h4>
-          <p>A 52-week guided journal using the ACTS prayer model, with Scripture passages and answered-prayer tracking.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Lifestyle</div>
-          <h4>Coffee Tasting Log Book</h4>
-          <p>40 tasting sessions with a flavor wheel, brewing notes, bean inventory, and a coffee origin guide for home brewers.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Lifestyle</div>
-          <h4>Whiskey Tasting Log Book</h4>
-          <p>40 tasting spreads with a flavor wheel, distillery references, bottle tracker, and tasting terminology guide.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Lifestyle</div>
-          <h4>Wine Tasting Journal</h4>
-          <p>40 tasting logs with wine flavor wheel, regions guide, cellar inventory, and food pairing notes for every glass.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Nature</div>
-          <h4>Mushroom Foraging Journal</h4>
-          <p>40 foraging records with species identification, habitat guide, safety rules, seasonal calendar, and life list.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Nature</div>
-          <h4>Beekeeping Log Book</h4>
-          <p>40 hive inspection spreads with seasonal calendar, plant checklist, honey harvest log, and equipment guide for beekeepers.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Sports</div>
-          <h4>Hiking Adventure Journal</h4>
-          <p>40 trail log spreads with Leave No Trace principles, Ten Essentials checklist, packing list, and summit summary in a pocket-size format.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Lifestyle</div>
-          <h4>Tea Tasting Journal</h4>
-          <p>40 tasting spreads with tea flavor wheel, 12 origins reference, brewing methods guide, and tasting terminology for loose leaf tea enthusiasts.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Lifestyle</div>
-          <h4>Cigar Tasting Log</h4>
-          <p>40 tasting spreads with cigar flavor wheel, vitola guide, 12 regions reference, and humidor inventory for aficionados and connoisseurs.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Sports</div>
-          <h4>Pickleball Journal</h4>
-          <p>52 game tracker pages with scoring tables, stat analysis, shot reference guide, DUPR rating tracker, and season wrap-up for competitive players.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Outdoors</div>
-          <h4>Camping Journal</h4>
-          <p>35 camp log spreads with campsite tracker, wildlife log, packing checklist, Leave No Trace guide, and map sketch area in a pocket-size format.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Science</div>
-          <h4>Stargazing Journal</h4>
-          <p>35 observation sessions with constellation guide, object tracker, sketch circle, moon phase tracker, and Bortle scale log for night sky observers.</p>
-        </div>
-        <div class="coming-card">
-          <div class="cat">Home & Garden</div>
-          <h4>Gardening Journal</h4>
-          <p>35 garden entry spreads with season tracker, harvest log, companion planting guide, planting calendar, and garden sketch area for every gardener.</p>
+      </div>
+      <div class="cat-section reveal">
+        <div class="cat-title">&#8962; Personal & Home <span class="count">3 titles</span></div>
+        <div class="cat-grid">
+          <div class="cat-card">
+            <div class="cc-title">Dog Training &amp; Puppy Journal</div>
+            <div class="cc-sub">Your Companion from First Day to Best Friend</div>
+            <div class="cc-meta">27 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Password Keeper</div>
+            <div class="cc-sub">A Secure Logbook for All Your Online Accounts</div>
+            <div class="cc-meta">76 pages</div>
+          </div>
+          <div class="cat-card">
+            <div class="cc-title">Pregnancy Journal</div>
+            <div class="cc-sub">A 40-Week Guided Journal for Moms to Be</div>
+            <div class="cc-meta">66 pages</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SUBSCRIBE ===== -->
+  <!-- SUBSCRIBE -->
   <section class="subscribe" id="subscribe">
     <div class="subscribe-inner reveal">
       <span class="label">Free Resources</span>
       <h2 class="title-m" style="margin-top:14px;">Get something for nothing.</h2>
-      <p class="body-l" style="margin-top:16px;">Join our reader list and receive free printable resources — reading plans, checklists, and bonus templates from our books.</p>
-      <!-- TODO: Replace action="#" with your email service provider form URL (Kit / MailerLite / Formspree) -->
+      <p class="body-l" style="margin-top:16px;">Join our reader list and receive free printable resources &#8212; reading plans, checklists, and bonus templates from our books.</p>
       <form class="sub-form" action="#" method="POST">
         <input type="email" name="email" placeholder="your@email.com" required>
         <button type="submit">Subscribe</button>
@@ -802,36 +958,27 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-logo">More <b>Shine</b> Press</div>
     <p>&copy; 2026 More Shine Press. All rights reserved.</p>
   </footer>
 
-  <!-- ===== INTERACTION SCRIPT ===== -->
   <script>
-    // Nav frosted-glass intensifies on scroll
-    const nav = document.getElementById('nav');
-    const onScroll = () => {
-      nav.classList.toggle('scrolled', window.scrollY > 10);
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
+    const nav = document.getElementById("nav");
+    const onScroll = () => { nav.classList.toggle("scrolled", window.scrollY > 10); };
+    window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
 
-    // Scroll reveal via IntersectionObserver
-    const reveals = document.querySelectorAll('.reveal, .reveal-stagger');
+    const reveals = document.querySelectorAll(".reveal, .reveal-stagger");
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          io.unobserve(entry.target);
-        }
+        if (entry.isIntersecting) { entry.target.classList.add("visible"); io.unobserve(entry.target); }
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
     reveals.forEach(el => io.observe(el));
 
-    // Count-up animation for stats
-    const nums = document.querySelectorAll('.stat .num');
+    const nums = document.querySelectorAll(".stat .num");
     const countIO = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -841,7 +988,7 @@
         const start = performance.now();
         const tick = (now) => {
           const p = Math.min((now - start) / dur, 1);
-          const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+          const eased = 1 - Math.pow(1 - p, 3);
           el.textContent = Math.round(target * eased);
           if (p < 1) requestAnimationFrame(tick);
         };
